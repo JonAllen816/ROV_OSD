@@ -1,0 +1,560 @@
+Arduino: 1.8.5 (Mac OS X), Board: "Arduino/Genuino Mega or Mega 2560, ATmega2560 (Mega 2560)"
+
+In file included from /Users/Jonathan/Documents/Arduino/libraries/FastSerial/BetterStream.h:16:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:9,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h: In function 'int strcasecmp_P(const char*, const prog_char_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h:108:32: error: expected primary-expression before 'const'
+     return strcasecmp_P(str1, (const prog_char *)pstr);
+
+                                ^
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h:108:32: error: expected ')' before 'const'
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h: In function 'int strcmp_P(const char*, const prog_char_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h:113:28: error: expected primary-expression before 'const'
+     return strcmp_P(str1, (const prog_char *)pstr);
+
+                            ^
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h:113:28: error: expected ')' before 'const'
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h: In function 'size_t strlen_P(const prog_char_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h:118:22: error: expected primary-expression before 'const'
+     return strlen_P((const prog_char *)pstr);
+
+                      ^
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h:118:22: error: expected ')' before 'const'
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h: In function 'void* memcpy_P(void*, const prog_char_t*, size_t)':
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h:123:28: error: expected primary-expression before 'const'
+     return memcpy_P(dest, (const prog_char *)src, n);
+
+                            ^
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h:123:28: error: expected ')' before 'const'
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h: In function 'char* strncpy_P(char*, const prog_char_t*, size_t)':
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h:148:31: error: expected primary-expression before 'const'
+     return strncpy_P(buffer, (const prog_char *)pstr, buffer_size);
+
+                               ^
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h:148:31: error: expected ')' before 'const'
+In file included from /Users/Jonathan/Library/Arduino15/packages/arduino/hardware/avr/1.6.21/cores/arduino/Arduino.h:28:0,
+                 from sketch/DP_MAVLINK_TEST.ino.cpp:1:
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h: In function 'uintptr_t pgm_read_pointer(const void*)':
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h:165:41: error: expected primary-expression before 'const'
+             u.a[i] = pgm_read_byte(i + (const prog_char *)s);
+
+                                         ^
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h:165:41: error: expected ')' before 'const'
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h:165:22: error: expected ')' before ';' token
+             u.a[i] = pgm_read_byte(i + (const prog_char *)s);
+
+                      ^
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/../AP_Common/AP_Common.h:165:22: error: expected ')' before ';' token
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:9:0,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/BetterStream.h: At global scope:
+/Users/Jonathan/Documents/Arduino/libraries/FastSerial/BetterStream.h:28:41: error: 'prog_char' does not name a type
+         void            _printf_P(const prog_char *, ...);
+
+                                         ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:2:0:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/Mavlink_compat.h: In function 'void mavlink_msg_global_position_int_send(mavlink_channel_t, uint32_t, int32_t, int32_t, int32_t, int32_t, int16_t, int16_t, int16_t, uint16_t)':
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/Mavlink_compat.h:92:13: error: redefinition of 'void mavlink_msg_global_position_int_send(mavlink_channel_t, uint32_t, int32_t, int32_t, int32_t, int32_t, int16_t, int16_t, int16_t, uint16_t)'
+ static void mavlink_msg_global_position_int_send(mavlink_channel_t chan, uint32_t time_boot_ms, int32_t lat, int32_t lon,
+
+             ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:374:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_global_position_int.h:173:20: note: 'void mavlink_msg_global_position_int_send(mavlink_channel_t, uint32_t, int32_t, int32_t, int32_t, int32_t, int16_t, int16_t, int16_t, uint16_t)' previously defined here
+ static inline void mavlink_msg_global_position_int_send(mavlink_channel_t chan, uint32_t time_boot_ms, int32_t lat, int32_t lon, int32_t alt, int32_t relative_alt, int16_t vx, int16_t vy, int16_t vz, uint16_t hdg)
+
+                    ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:2:0:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/Mavlink_compat.h:101:13: error: too few arguments to function 'void mavlink_msg_global_position_int_send(mavlink_channel_t, uint32_t, int32_t, int32_t, int32_t, int32_t, int16_t, int16_t, int16_t, uint16_t)'
+   vx, vy, vz);
+
+             ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:374:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_global_position_int.h:173:20: note: declared here
+ static inline void mavlink_msg_global_position_int_send(mavlink_channel_t chan, uint32_t time_boot_ms, int32_t lat, int32_t lon, int32_t alt, int32_t relative_alt, int16_t vx, int16_t vy, int16_t vz, uint16_t hdg)
+
+                    ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:2:0:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/Mavlink_compat.h: In function 'void mavlink_msg_rc_channels_scaled_send(mavlink_channel_t, uint32_t, uint8_t, int16_t, int16_t, int16_t, int16_t, int16_t, int16_t, int16_t, int16_t, uint8_t)':
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/Mavlink_compat.h:104:13: error: redefinition of 'void mavlink_msg_rc_channels_scaled_send(mavlink_channel_t, uint32_t, uint8_t, int16_t, int16_t, int16_t, int16_t, int16_t, int16_t, int16_t, int16_t, uint8_t)'
+ static void mavlink_msg_rc_channels_scaled_send(mavlink_channel_t chan, uint32_t time_boot_ms, uint8_t port,
+
+             ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:375:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_rc_channels_scaled.h:191:20: note: 'void mavlink_msg_rc_channels_scaled_send(mavlink_channel_t, uint32_t, uint8_t, int16_t, int16_t, int16_t, int16_t, int16_t, int16_t, int16_t, int16_t, uint8_t)' previously defined here
+ static inline void mavlink_msg_rc_channels_scaled_send(mavlink_channel_t chan, uint32_t time_boot_ms, uint8_t port, int16_t chan1_scaled, int16_t chan2_scaled, int16_t chan3_scaled, int16_t chan4_scaled, int16_t chan5_scaled, int16_t chan6_scaled, int16_t chan7_scaled, int16_t chan8_scaled, uint8_t rssi)
+
+                    ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:2:0:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/Mavlink_compat.h:119:6: error: too few arguments to function 'void mavlink_msg_rc_channels_scaled_send(mavlink_channel_t, uint32_t, uint8_t, int16_t, int16_t, int16_t, int16_t, int16_t, int16_t, int16_t, int16_t, uint8_t)'
+  rssi);
+
+      ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:375:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_rc_channels_scaled.h:191:20: note: declared here
+ static inline void mavlink_msg_rc_channels_scaled_send(mavlink_channel_t chan, uint32_t time_boot_ms, uint8_t port, int16_t chan1_scaled, int16_t chan2_scaled, int16_t chan3_scaled, int16_t chan4_scaled, int16_t chan5_scaled, int16_t chan6_scaled, int16_t chan7_scaled, int16_t chan8_scaled, uint8_t rssi)
+
+                    ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:2:0:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/Mavlink_compat.h: In function 'void mavlink_msg_rc_channels_raw_send(mavlink_channel_t, uint32_t, uint8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint8_t)':
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/Mavlink_compat.h:122:13: error: redefinition of 'void mavlink_msg_rc_channels_raw_send(mavlink_channel_t, uint32_t, uint8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint8_t)'
+ static void mavlink_msg_rc_channels_raw_send(mavlink_channel_t chan, uint32_t time_boot_ms, uint8_t port,
+
+             ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:376:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_rc_channels_raw.h:191:20: note: 'void mavlink_msg_rc_channels_raw_send(mavlink_channel_t, uint32_t, uint8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint8_t)' previously defined here
+ static inline void mavlink_msg_rc_channels_raw_send(mavlink_channel_t chan, uint32_t time_boot_ms, uint8_t port, uint16_t chan1_raw, uint16_t chan2_raw, uint16_t chan3_raw, uint16_t chan4_raw, uint16_t chan5_raw, uint16_t chan6_raw, uint16_t chan7_raw, uint16_t chan8_raw, uint8_t rssi)
+
+                    ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:2:0:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/Mavlink_compat.h:137:7: error: too few arguments to function 'void mavlink_msg_rc_channels_raw_send(mavlink_channel_t, uint32_t, uint8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint8_t)'
+   rssi);
+
+       ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:376:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_rc_channels_raw.h:191:20: note: declared here
+ static inline void mavlink_msg_rc_channels_raw_send(mavlink_channel_t chan, uint32_t time_boot_ms, uint8_t port, uint16_t chan1_raw, uint16_t chan2_raw, uint16_t chan3_raw, uint16_t chan4_raw, uint16_t chan5_raw, uint16_t chan6_raw, uint16_t chan7_raw, uint16_t chan8_raw, uint8_t rssi)
+
+                    ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:2:0:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/Mavlink_compat.h: In function 'void mavlink_msg_servo_output_raw_send(mavlink_channel_t, uint32_t, uint8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)':
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/Mavlink_compat.h:141:13: error: redefinition of 'void mavlink_msg_servo_output_raw_send(mavlink_channel_t, uint32_t, uint8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)'
+ static void mavlink_msg_servo_output_raw_send(mavlink_channel_t chan, uint32_t time_usec, uint8_t port,
+
+             ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:377:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_servo_output_raw.h:182:20: note: 'void mavlink_msg_servo_output_raw_send(mavlink_channel_t, uint32_t, uint8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)' previously defined here
+ static inline void mavlink_msg_servo_output_raw_send(mavlink_channel_t chan, uint32_t time_usec, uint8_t port, uint16_t servo1_raw, uint16_t servo2_raw, uint16_t servo3_raw, uint16_t servo4_raw, uint16_t servo5_raw, uint16_t servo6_raw, uint16_t servo7_raw, uint16_t servo8_raw)
+
+                    ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:2:0:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/Mavlink_compat.h:155:13: error: too few arguments to function 'void mavlink_msg_servo_output_raw_send(mavlink_channel_t, uint32_t, uint8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)'
+   servo8_raw);
+
+             ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:377:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_servo_output_raw.h:182:20: note: declared here
+ static inline void mavlink_msg_servo_output_raw_send(mavlink_channel_t chan, uint32_t time_usec, uint8_t port, uint16_t servo1_raw, uint16_t servo2_raw, uint16_t servo3_raw, uint16_t servo4_raw, uint16_t servo5_raw, uint16_t servo6_raw, uint16_t servo7_raw, uint16_t servo8_raw)
+
+                    ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:2:0:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/Mavlink_compat.h: In function 'void mavlink_msg_statustext_send(mavlink_channel_t, uint8_t, const char*)':
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/Mavlink_compat.h:158:13: error: redefinition of 'void mavlink_msg_statustext_send(mavlink_channel_t, uint8_t, const char*)'
+ static void mavlink_msg_statustext_send(mavlink_channel_t chan, uint8_t severity, const char *text)
+
+             ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:426:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_statustext.h:106:20: note: 'void mavlink_msg_statustext_send(mavlink_channel_t, uint8_t, const char*)' previously defined here
+ static inline void mavlink_msg_statustext_send(mavlink_channel_t chan, uint8_t severity, const char *text)
+
+                    ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:2:0:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/Mavlink_compat.h: In function 'void mavlink_msg_param_value_send(mavlink_channel_t, const char*, float, uint8_t, uint16_t, uint16_t)':
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/Mavlink_compat.h:163:13: error: redefinition of 'void mavlink_msg_param_value_send(mavlink_channel_t, const char*, float, uint8_t, uint16_t, uint16_t)'
+ static void mavlink_msg_param_value_send(mavlink_channel_t chan, const char *param_id,
+
+             ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:363:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_param_value.h:133:20: note: 'void mavlink_msg_param_value_send(mavlink_channel_t, const char*, float, uint8_t, uint16_t, uint16_t)' previously defined here
+ static inline void mavlink_msg_param_value_send(mavlink_channel_t chan, const char *param_id, float param_value, uint8_t param_type, uint16_t param_count, uint16_t param_index)
+
+                    ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:2:0:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/Mavlink_compat.h:172:14: error: too few arguments to function 'void mavlink_msg_param_value_send(mavlink_channel_t, const char*, float, uint8_t, uint16_t, uint16_t)'
+   param_index);
+
+              ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:363:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_param_value.h:133:20: note: declared here
+ static inline void mavlink_msg_param_value_send(mavlink_channel_t chan, const char *param_id, float param_value, uint8_t param_type, uint16_t param_count, uint16_t param_index)
+
+                    ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: At global scope:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:7:16: error: redefinition of 'struct __mavlink_sys_status_t'
+ typedef struct __mavlink_sys_status_t {
+                ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:5:16: error: previous definition of 'struct __mavlink_sys_status_t'
+ typedef struct __mavlink_sys_status_t
+
+                ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:21:1: error: typedef declaration invalid in parameter declaration
+ }) mavlink_sys_status_t;
+ ^
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:21:4: error: expected constructor, destructor, or type conversion before 'mavlink_sys_status_t'
+ }) mavlink_sys_status_t;
+    ^
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'uint16_t mavlink_msg_sys_status_pack(uint8_t, uint8_t, mavlink_message_t*, uint32_t, uint32_t, uint32_t, uint16_t, uint16_t, int16_t, int8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:95:24: error: redefinition of 'uint16_t mavlink_msg_sys_status_pack(uint8_t, uint8_t, mavlink_message_t*, uint32_t, uint32_t, uint32_t, uint16_t, uint16_t, int16_t, int8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)'
+ static inline uint16_t mavlink_msg_sys_status_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:68:24: note: 'uint16_t mavlink_msg_sys_status_pack(uint8_t, uint8_t, mavlink_message_t*, uint32_t, uint32_t, uint32_t, uint16_t, uint16_t, int16_t, int8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)' previously defined here
+ static inline uint16_t mavlink_msg_sys_status_pack(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg,
+
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:135:162: error: too many arguments to function 'uint16_t mavlink_finalize_message(mavlink_message_t*, uint8_t, uint8_t, uint8_t, uint8_t)'
+     return mavlink_finalize_message(msg, system_id, component_id, MAVLINK_MSG_ID_SYS_STATUS_MIN_LEN, MAVLINK_MSG_ID_SYS_STATUS_LEN, MAVLINK_MSG_ID_SYS_STATUS_CRC);
+                                                                                                                                                                  ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../protocol.h:41:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:26,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../mavlink_helpers.h:83:25: note: declared here
+ MAVLINK_HELPER uint16_t mavlink_finalize_message(mavlink_message_t* msg, uint8_t system_id, uint8_t component_id, 
+
+                         ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'uint16_t mavlink_msg_sys_status_pack_chan(uint8_t, uint8_t, uint8_t, mavlink_message_t*, uint32_t, uint32_t, uint32_t, uint16_t, uint16_t, int16_t, int8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:159:24: error: redefinition of 'uint16_t mavlink_msg_sys_status_pack_chan(uint8_t, uint8_t, uint8_t, mavlink_message_t*, uint32_t, uint32_t, uint32_t, uint16_t, uint16_t, int16_t, int8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)'
+ static inline uint16_t mavlink_msg_sys_status_pack_chan(uint8_t system_id, uint8_t component_id, uint8_t chan,
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:132:24: note: 'uint16_t mavlink_msg_sys_status_pack_chan(uint8_t, uint8_t, uint8_t, mavlink_message_t*, uint32_t, uint32_t, uint32_t, uint16_t, uint16_t, int16_t, int8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)' previously defined here
+ static inline uint16_t mavlink_msg_sys_status_pack_chan(uint8_t system_id, uint8_t component_id, uint8_t chan,
+
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:200:173: error: too many arguments to function 'uint16_t mavlink_finalize_message_chan(mavlink_message_t*, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t)'
+     return mavlink_finalize_message_chan(msg, system_id, component_id, chan, MAVLINK_MSG_ID_SYS_STATUS_MIN_LEN, MAVLINK_MSG_ID_SYS_STATUS_LEN, MAVLINK_MSG_ID_SYS_STATUS_CRC);
+                                                                                                                                                                             ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../protocol.h:41:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:26,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../mavlink_helpers.h:52:25: note: declared here
+ MAVLINK_HELPER uint16_t mavlink_finalize_message_chan(mavlink_message_t* msg, uint8_t system_id, uint8_t component_id, 
+
+                         ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'uint16_t mavlink_msg_sys_status_encode(uint8_t, uint8_t, mavlink_message_t*, const mavlink_sys_status_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:211:24: error: redefinition of 'uint16_t mavlink_msg_sys_status_encode(uint8_t, uint8_t, mavlink_message_t*, const mavlink_sys_status_t*)'
+ static inline uint16_t mavlink_msg_sys_status_encode(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg, const mavlink_sys_status_t* sys_status)
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:184:24: note: 'uint16_t mavlink_msg_sys_status_encode(uint8_t, uint8_t, mavlink_message_t*, const mavlink_sys_status_t*)' previously defined here
+ static inline uint16_t mavlink_msg_sys_status_encode(uint8_t system_id, uint8_t component_id, mavlink_message_t* msg, const mavlink_sys_status_t* sys_status)
+
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'void mavlink_msg_sys_status_send(mavlink_channel_t, uint32_t, uint32_t, uint32_t, uint16_t, uint16_t, int16_t, int8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:250:20: error: redefinition of 'void mavlink_msg_sys_status_send(mavlink_channel_t, uint32_t, uint32_t, uint32_t, uint16_t, uint16_t, int16_t, int8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)'
+ static inline void mavlink_msg_sys_status_send(mavlink_channel_t chan, uint32_t onboard_control_sensors_present, uint32_t onboard_control_sensors_enabled, uint32_t onboard_control_sensors_health, uint16_t load, uint16_t voltage_battery, int16_t current_battery, int8_t battery_remaining, uint16_t drop_rate_comm, uint16_t errors_comm, uint16_t errors_count1, uint16_t errors_count2, uint16_t errors_count3, uint16_t errors_count4)
+                    ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:209:20: note: 'void mavlink_msg_sys_status_send(mavlink_channel_t, uint32_t, uint32_t, uint32_t, uint16_t, uint16_t, int16_t, int8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)' previously defined here
+ static inline void mavlink_msg_sys_status_send(mavlink_channel_t chan, uint32_t onboard_control_sensors_present, uint32_t onboard_control_sensors_enabled, uint32_t onboard_control_sensors_health, uint16_t load, uint16_t voltage_battery, int16_t current_battery, int8_t battery_remaining, uint16_t drop_rate_comm, uint16_t errors_comm, uint16_t errors_count1, uint16_t errors_count2, uint16_t errors_count3, uint16_t errors_count4)
+
+                    ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:285:188: error: too many arguments to function 'void _mav_finalize_message_chan_send(mavlink_channel_t, uint8_t, const char*, uint8_t, uint8_t)'
+     _mav_finalize_message_chan_send(chan, MAVLINK_MSG_ID_SYS_STATUS, (const char *)&packet, MAVLINK_MSG_ID_SYS_STATUS_MIN_LEN, MAVLINK_MSG_ID_SYS_STATUS_LEN, MAVLINK_MSG_ID_SYS_STATUS_CRC);
+                                                                                                                                                                                            ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../protocol.h:41:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:26,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../mavlink_helpers.h:103:21: note: declared here
+ MAVLINK_HELPER void _mav_finalize_message_chan_send(mavlink_channel_t chan, uint8_t msgid, const char *packet, 
+
+                     ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'void mavlink_msg_sys_status_send_struct(mavlink_channel_t, const mavlink_sys_status_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:299:191: error: too many arguments to function 'void _mav_finalize_message_chan_send(mavlink_channel_t, uint8_t, const char*, uint8_t, uint8_t)'
+     _mav_finalize_message_chan_send(chan, MAVLINK_MSG_ID_SYS_STATUS, (const char *)sys_status, MAVLINK_MSG_ID_SYS_STATUS_MIN_LEN, MAVLINK_MSG_ID_SYS_STATUS_LEN, MAVLINK_MSG_ID_SYS_STATUS_CRC);
+                                                                                                                                                                                               ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../protocol.h:41:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:26,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../mavlink_helpers.h:103:21: note: declared here
+ MAVLINK_HELPER void _mav_finalize_message_chan_send(mavlink_channel_t chan, uint8_t msgid, const char *packet, 
+
+                     ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'void mavlink_msg_sys_status_send_buf(mavlink_message_t*, mavlink_channel_t, uint32_t, uint32_t, uint32_t, uint16_t, uint16_t, int16_t, int8_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:346:187: error: too many arguments to function 'void _mav_finalize_message_chan_send(mavlink_channel_t, uint8_t, const char*, uint8_t, uint8_t)'
+     _mav_finalize_message_chan_send(chan, MAVLINK_MSG_ID_SYS_STATUS, (const char *)packet, MAVLINK_MSG_ID_SYS_STATUS_MIN_LEN, MAVLINK_MSG_ID_SYS_STATUS_LEN, MAVLINK_MSG_ID_SYS_STATUS_CRC);
+                                                                                                                                                                                           ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../protocol.h:41:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:26,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../mavlink_helpers.h:103:21: note: declared here
+ MAVLINK_HELPER void _mav_finalize_message_chan_send(mavlink_channel_t chan, uint8_t msgid, const char *packet, 
+
+                     ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'uint32_t mavlink_msg_sys_status_get_onboard_control_sensors_present(const mavlink_message_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:361:24: error: redefinition of 'uint32_t mavlink_msg_sys_status_get_onboard_control_sensors_present(const mavlink_message_t*)'
+ static inline uint32_t mavlink_msg_sys_status_get_onboard_control_sensors_present(const mavlink_message_t* msg)
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:258:24: note: 'uint32_t mavlink_msg_sys_status_get_onboard_control_sensors_present(const mavlink_message_t*)' previously defined here
+ static inline uint32_t mavlink_msg_sys_status_get_onboard_control_sensors_present(const mavlink_message_t* msg)
+
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'uint32_t mavlink_msg_sys_status_get_onboard_control_sensors_enabled(const mavlink_message_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:371:24: error: redefinition of 'uint32_t mavlink_msg_sys_status_get_onboard_control_sensors_enabled(const mavlink_message_t*)'
+ static inline uint32_t mavlink_msg_sys_status_get_onboard_control_sensors_enabled(const mavlink_message_t* msg)
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:268:24: note: 'uint32_t mavlink_msg_sys_status_get_onboard_control_sensors_enabled(const mavlink_message_t*)' previously defined here
+ static inline uint32_t mavlink_msg_sys_status_get_onboard_control_sensors_enabled(const mavlink_message_t* msg)
+
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'uint32_t mavlink_msg_sys_status_get_onboard_control_sensors_health(const mavlink_message_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:381:24: error: redefinition of 'uint32_t mavlink_msg_sys_status_get_onboard_control_sensors_health(const mavlink_message_t*)'
+ static inline uint32_t mavlink_msg_sys_status_get_onboard_control_sensors_health(const mavlink_message_t* msg)
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:278:24: note: 'uint32_t mavlink_msg_sys_status_get_onboard_control_sensors_health(const mavlink_message_t*)' previously defined here
+ static inline uint32_t mavlink_msg_sys_status_get_onboard_control_sensors_health(const mavlink_message_t* msg)
+
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'uint16_t mavlink_msg_sys_status_get_load(const mavlink_message_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:391:24: error: redefinition of 'uint16_t mavlink_msg_sys_status_get_load(const mavlink_message_t*)'
+ static inline uint16_t mavlink_msg_sys_status_get_load(const mavlink_message_t* msg)
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:288:24: note: 'uint16_t mavlink_msg_sys_status_get_load(const mavlink_message_t*)' previously defined here
+ static inline uint16_t mavlink_msg_sys_status_get_load(const mavlink_message_t* msg)
+
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'uint16_t mavlink_msg_sys_status_get_voltage_battery(const mavlink_message_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:401:24: error: redefinition of 'uint16_t mavlink_msg_sys_status_get_voltage_battery(const mavlink_message_t*)'
+ static inline uint16_t mavlink_msg_sys_status_get_voltage_battery(const mavlink_message_t* msg)
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:298:24: note: 'uint16_t mavlink_msg_sys_status_get_voltage_battery(const mavlink_message_t*)' previously defined here
+ static inline uint16_t mavlink_msg_sys_status_get_voltage_battery(const mavlink_message_t* msg)
+
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'int16_t mavlink_msg_sys_status_get_current_battery(const mavlink_message_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:411:23: error: redefinition of 'int16_t mavlink_msg_sys_status_get_current_battery(const mavlink_message_t*)'
+ static inline int16_t mavlink_msg_sys_status_get_current_battery(const mavlink_message_t* msg)
+                       ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:308:23: note: 'int16_t mavlink_msg_sys_status_get_current_battery(const mavlink_message_t*)' previously defined here
+ static inline int16_t mavlink_msg_sys_status_get_current_battery(const mavlink_message_t* msg)
+
+                       ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'int8_t mavlink_msg_sys_status_get_battery_remaining(const mavlink_message_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:421:22: error: redefinition of 'int8_t mavlink_msg_sys_status_get_battery_remaining(const mavlink_message_t*)'
+ static inline int8_t mavlink_msg_sys_status_get_battery_remaining(const mavlink_message_t* msg)
+                      ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:318:22: note: 'int8_t mavlink_msg_sys_status_get_battery_remaining(const mavlink_message_t*)' previously defined here
+ static inline int8_t mavlink_msg_sys_status_get_battery_remaining(const mavlink_message_t* msg)
+
+                      ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'uint16_t mavlink_msg_sys_status_get_drop_rate_comm(const mavlink_message_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:431:24: error: redefinition of 'uint16_t mavlink_msg_sys_status_get_drop_rate_comm(const mavlink_message_t*)'
+ static inline uint16_t mavlink_msg_sys_status_get_drop_rate_comm(const mavlink_message_t* msg)
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:328:24: note: 'uint16_t mavlink_msg_sys_status_get_drop_rate_comm(const mavlink_message_t*)' previously defined here
+ static inline uint16_t mavlink_msg_sys_status_get_drop_rate_comm(const mavlink_message_t* msg)
+
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'uint16_t mavlink_msg_sys_status_get_errors_comm(const mavlink_message_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:441:24: error: redefinition of 'uint16_t mavlink_msg_sys_status_get_errors_comm(const mavlink_message_t*)'
+ static inline uint16_t mavlink_msg_sys_status_get_errors_comm(const mavlink_message_t* msg)
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:338:24: note: 'uint16_t mavlink_msg_sys_status_get_errors_comm(const mavlink_message_t*)' previously defined here
+ static inline uint16_t mavlink_msg_sys_status_get_errors_comm(const mavlink_message_t* msg)
+
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'uint16_t mavlink_msg_sys_status_get_errors_count1(const mavlink_message_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:451:24: error: redefinition of 'uint16_t mavlink_msg_sys_status_get_errors_count1(const mavlink_message_t*)'
+ static inline uint16_t mavlink_msg_sys_status_get_errors_count1(const mavlink_message_t* msg)
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:348:24: note: 'uint16_t mavlink_msg_sys_status_get_errors_count1(const mavlink_message_t*)' previously defined here
+ static inline uint16_t mavlink_msg_sys_status_get_errors_count1(const mavlink_message_t* msg)
+
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'uint16_t mavlink_msg_sys_status_get_errors_count2(const mavlink_message_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:461:24: error: redefinition of 'uint16_t mavlink_msg_sys_status_get_errors_count2(const mavlink_message_t*)'
+ static inline uint16_t mavlink_msg_sys_status_get_errors_count2(const mavlink_message_t* msg)
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:358:24: note: 'uint16_t mavlink_msg_sys_status_get_errors_count2(const mavlink_message_t*)' previously defined here
+ static inline uint16_t mavlink_msg_sys_status_get_errors_count2(const mavlink_message_t* msg)
+
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'uint16_t mavlink_msg_sys_status_get_errors_count3(const mavlink_message_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:471:24: error: redefinition of 'uint16_t mavlink_msg_sys_status_get_errors_count3(const mavlink_message_t*)'
+ static inline uint16_t mavlink_msg_sys_status_get_errors_count3(const mavlink_message_t* msg)
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:368:24: note: 'uint16_t mavlink_msg_sys_status_get_errors_count3(const mavlink_message_t*)' previously defined here
+ static inline uint16_t mavlink_msg_sys_status_get_errors_count3(const mavlink_message_t* msg)
+
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'uint16_t mavlink_msg_sys_status_get_errors_count4(const mavlink_message_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:481:24: error: redefinition of 'uint16_t mavlink_msg_sys_status_get_errors_count4(const mavlink_message_t*)'
+ static inline uint16_t mavlink_msg_sys_status_get_errors_count4(const mavlink_message_t* msg)
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:378:24: note: 'uint16_t mavlink_msg_sys_status_get_errors_count4(const mavlink_message_t*)' previously defined here
+ static inline uint16_t mavlink_msg_sys_status_get_errors_count4(const mavlink_message_t* msg)
+
+                        ^
+In file included from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:3:0:
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h: In function 'void mavlink_msg_sys_status_decode(const mavlink_message_t*, mavlink_sys_status_t*)':
+/Users/Jonathan/Documents/Arduino/libraries/MAVLINK-OLD/mavlink_msg_sys_status.h:492:20: error: redefinition of 'void mavlink_msg_sys_status_decode(const mavlink_message_t*, mavlink_sys_status_t*)'
+ static inline void mavlink_msg_sys_status_decode(const mavlink_message_t* msg, mavlink_sys_status_t* sys_status)
+                    ^
+In file included from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/common.h:354:0,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/ardupilotmega.h:144,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/mavlink.h:25,
+                 from /Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/GCS_MAVLink.h:114,
+                 from /Users/Jonathan/Documents/Arduino/DP_MAVLINK_TEST/DP_MAVLINK_TEST.ino:1:
+/Users/Jonathan/Documents/Arduino/libraries/GCS_MAVLink/include/mavlink/v1.0/ardupilotmega/../common/./mavlink_msg_sys_status.h:389:20: note: 'void mavlink_msg_sys_status_decode(const mavlink_message_t*, mavlink_sys_status_t*)' previously defined here
+ static inline void mavlink_msg_sys_status_decode(const mavlink_message_t* msg, mavlink_sys_status_t* sys_status)
+
+                    ^
+exit status 1
+Error compiling for board Arduino/Genuino Mega or Mega 2560.
+
+This report would have more information with
+"Show verbose output during compilation"
+option enabled in File -> Preferences.
